@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+5.times do |i|
+  Track.create({ 
+    name: 'Sample Track #{i}', 
+    url: 'https://soundcloud.com/travisscott-2/wonderful-ftthe-weeknd'
+  })
+end

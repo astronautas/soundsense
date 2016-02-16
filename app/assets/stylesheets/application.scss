@@ -1,4 +1,21 @@
-/* Bootstrap for Rails SASS */
+// Bootstrap for Rails SASS
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// Site wide styles
+@import 'base/normalize';
+@import 'base/colors';
+
+// Helpers
+@import 'helpers/other';
+@import 'helpers/positioning';
+@import 'helpers/containers';
+
+// Page (or container) specific styles
+@import 'header';
+@import 'footer';
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
